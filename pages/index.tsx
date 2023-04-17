@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-
+import GameHeader from '@/components/GameHeader';
+import Wordoku from '@/components/Wordoku';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -17,8 +18,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-       <h1>WORDOKU</h1>
-       <h2>Site is down for maintenance....</h2>
+       <GameHeader />
+       <Wordoku />
       </main>
     </>
   )
